@@ -31,6 +31,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="2009", MODE="0660
 # Nintendo Switch Pro Controller over bluetooth hidraw
 KERNEL=="hidraw*", KERNELS=="*057E:2009*", MODE="0660", TAG+="uaccess"
 
+# PowerA Wired Controller for Nintendo Switch
+KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a711", MODE="0660", TAG+="uaccess"
+
 # Nacon PS4 Revolution Pro Controller
 KERNEL=="hidraw*", ATTRS{idVendor}=="146b", ATTRS{idProduct}=="0d01", MODE="0660", TAG+="uaccess"
 
