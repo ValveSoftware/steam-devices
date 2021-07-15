@@ -65,6 +65,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1000", MODE="0660
 # Razer Raiju 2 Tournament Edition
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1007", MODE="0660", TAG+="uaccess"
 
+# Razer Raiju PS4 Controller Tournament Edition over bluetooth hidraw
+KERNEL=="hidraw*", KERNELS=="*1532:100A*", MODE="0660", TAG+="uaccess"
+
 # Razer Panthera Arcade Stick
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="0401", MODE="0660", TAG+="uaccess"
 
