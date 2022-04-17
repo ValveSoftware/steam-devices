@@ -60,8 +60,14 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0188", MODE="0660
 # Nacon PS4 Revolution Pro Controller
 KERNEL=="hidraw*", ATTRS{idVendor}=="146b", ATTRS{idProduct}=="0d01", MODE="0660", TAG+="uaccess"
 
+# Nacon Daija PS4 Arcade Stick
+KERNEL=="hidraw*", ATTRS{idVendor}=="146b", ATTRS{idProduct}=="0d09", MODE="0660", TAG+="uaccess"
+
 # Razer Raiju PS4 Controller
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1000", MODE="0660", TAG+="uaccess"
+
+# Razer Raiju Ultimate PS4 Controller
+KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1004", MODE="0660", TAG+="uaccess"
 
 # Razer Raiju 2 Tournament Edition
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1007", MODE="0660", TAG+="uaccess"
@@ -80,6 +86,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0738", ATTRS{idProduct}=="8250", MODE="0660
 
 # Mad Catz - Street Fighter V Arcade FightStick TE S+
 KERNEL=="hidraw*", ATTRS{idVendor}=="0738", ATTRS{idProduct}=="8384", MODE="0660", TAG+="uaccess"
+
+# Mad Catz - Street Fighter V Arcade FightStick TE2+
+KERNEL=="hidraw*", ATTRS{idVendor}=="0738", ATTRS{idProduct}=="8481", MODE="0660", TAG+="uaccess"
 
 # Brooks Universal Fighting Board
 KERNEL=="hidraw*", ATTRS{idVendor}=="0c12", ATTRS{idProduct}=="0c30", MODE="0660", TAG+="uaccess"
