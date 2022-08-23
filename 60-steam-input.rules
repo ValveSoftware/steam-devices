@@ -125,3 +125,6 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="9886", ATTRS{idProduct}=="0025", MODE="0660
 
 # Thrustmaster eSwap Pro
 KERNEL=="hidraw*", ATTRS{idVendor}=="044f", ATTRS{idProduct}=="d00e", MODE="0660", TAG+="uaccess"
+
+# PDP Rock Candy Wired Controller for Switch
+KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0187", MODE="0660", TAG+="uaccess"
