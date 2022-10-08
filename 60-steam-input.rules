@@ -93,6 +93,15 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0c12", ATTRS{idProduct}=="0ef6", MODE="0660
 # HORI RAP4
 KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="008a", MODE="0660", TAG+="uaccess"
 
+# HORI Alpha for PS5 (PS5 Mode)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="0184", MODE="0660", TAG+="uaccess"
+
+# HORI Alpha for PS5 (PS4 Mode)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="011c", MODE="0660", TAG+="uaccess"
+
+# HORI Alpha for PS5 (PC Mode)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="011e", MODE="0660", TAG+="uaccess"
+
 # HORIPAD 4 FPS
 KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="0055", MODE="0660", TAG+="uaccess"
 
