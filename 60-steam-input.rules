@@ -137,3 +137,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="9886", ATTRS{idProduct}=="0025", MODE="0660
 
 # Thrustmaster eSwap Pro
 KERNEL=="hidraw*", ATTRS{idVendor}=="044f", ATTRS{idProduct}=="d00e", MODE="0660", TAG+="uaccess"
+
+# Hori Co., Ltd HORI Wireless Pad ONYX PLUS Wired
+KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="013f", MODE="0660", TAG+="uaccess"
+
+# Hori Co., Ltd HORI Wireless Pad ONYX PLUS Wireless
+KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="012b", MODE="0660", TAG+="uaccess"
