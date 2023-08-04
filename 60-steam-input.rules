@@ -87,6 +87,9 @@ KERNEL=="hidraw*", KERNELS=="*1532:1009*", MODE="0660", TAG+="uaccess"
 # Razer Panthera Arcade Stick
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="0401", MODE="0660", TAG+="uaccess"
 
+# Razer Wolverine V2 Pro in wired PS5 mode
+KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="100b", MODE="0660", TAG+="uaccess"
+
 # Mad Catz - Street Fighter V Arcade FightPad PRO
 KERNEL=="hidraw*", ATTRS{idVendor}=="0738", ATTRS{idProduct}=="8250", MODE="0660", TAG+="uaccess"
 
