@@ -135,5 +135,11 @@ KERNEL=="hidraw*", KERNELS=="*0955:7214*", MODE="0660", TAG+="uaccess"
 # Astro C40
 KERNEL=="hidraw*", ATTRS{idVendor}=="9886", ATTRS{idProduct}=="0025", MODE="0660", TAG+="uaccess"
 
-# Thrustmaster eSwap Pro
-KERNEL=="hidraw*", ATTRS{idVendor}=="044f", ATTRS{idProduct}=="d00e", MODE="0660", TAG+="uaccess"
+# Thrustmaster USB devices
+KERNEL=="hidraw*", ATTRS{idVendor}=="044f", MODE="0660", TAG+="uaccess"
+
+# VKB USB devices
+KERNEL=="hidraw*", ATTRS{idVendor}=="231d", MODE="0660", TAG+="uaccess"
+
+# Virpil USB devices
+KERNEL=="hidraw*", ATTRS{idVendor}=="3344", MODE="0660", TAG+="uaccess"
