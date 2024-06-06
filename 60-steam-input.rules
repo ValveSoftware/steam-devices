@@ -51,6 +51,7 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0185", MODE="0660
 
 # PowerA Wired Controller for Nintendo Switch
 KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a711", MODE="0660", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a712", MODE="0660", TAG+="uaccess"
 KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a713", MODE="0660", TAG+="uaccess"
 
 # PowerA Wireless Controller for Nintendo Switch we have to use
