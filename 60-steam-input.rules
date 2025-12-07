@@ -213,3 +213,6 @@ KERNEL=="hidraw*", KERNELS=="*2DC8:*", MODE="0660", TAG+="uaccess"
 
 # Flydigi 2.4 GHz / Wired
 KERNEL=="hidraw*", ATTRS{idVendor}=="04b4", MODE="0660", TAG+="uaccess"
+
+# Flydigi HIDAPI Enhanced Mode
+KERNEL=="hidraw*", ATTRS{idVendor}=="37d7", MODE="0660", TAG+="uaccess"
