@@ -61,6 +61,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0184", MODE="0660
 # PDP Wired Fight Pad Pro for Nintendo Switch
 KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0185", MODE="0660", TAG+="uaccess"
 
+# Logic3 Rock Candy Wired Controller for Nintendo Switch
+KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0187", MODE="0660", TAG+="uaccess"
+
 # PowerA Wired Controller for Nintendo Switch
 KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a711", MODE="0660", TAG+="uaccess"
 KERNEL=="hidraw*", ATTRS{idVendor}=="20d6", ATTRS{idProduct}=="a712", MODE="0660", TAG+="uaccess"
