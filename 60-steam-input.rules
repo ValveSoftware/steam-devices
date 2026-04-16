@@ -10,6 +10,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="28de", MODE="0660", TAG+="uaccess"
 # Valve HID devices over bluetooth hidraw
 KERNEL=="hidraw*", KERNELS=="*28DE:*", MODE="0660", TAG+="uaccess"
 
+# Allow wakeup from Valve devices (Steam Controller 2015 receiver, Steam Controller 2026 receiver) 
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", ATTR{power/wakeup}="enabled"
+
 # DualShock 3 over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0268", MODE="0660", TAG+="uaccess"
 
