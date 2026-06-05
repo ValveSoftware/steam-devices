@@ -8,7 +8,10 @@ KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinpu
 KERNEL=="hidraw*", ATTRS{idVendor}=="28de", MODE="0660", TAG+="uaccess"
 
 # Valve HID devices over bluetooth hidraw
-KERNEL=="hidraw*", KERNELS=="*28DE:*", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{id/vendor}=="28de", MODE="0660", TAG+="uaccess"
+
+# Valve HID devices over bluetooth evdev
+SUBSYSTEM=="input", ATTRS{id/vendor}=="28de", MODE="0660", TAG+="uaccess"
 
 # Allow wakeup from Valve devices (Steam Controller 2015 receiver, Steam Controller 2026 receiver, Steam Machine Bluetooth) 
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", ATTR{power/wakeup}="enabled"
