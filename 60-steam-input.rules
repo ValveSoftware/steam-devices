@@ -14,7 +14,7 @@ SUBSYSTEM=="hidraw", ATTRS{id/vendor}=="28de", MODE="0660", TAG+="uaccess"
 SUBSYSTEM=="input", ATTRS{id/vendor}=="28de", MODE="0660", TAG+="uaccess"
 
 # Allow wakeup from Valve devices (Steam Controller 2015 receiver, Steam Controller 2026 receiver, Steam Machine Bluetooth) 
-ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="28de", ATTR{power/wakeup}=="*", ATTR{power/wakeup}="enabled"
 
 # DualShock 3 over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0268", MODE="0660", TAG+="uaccess"
