@@ -202,17 +202,26 @@ KERNEL=="hidraw*", SUBSYSTEM=="hidraw", KERNELS=="*045E:0B22*", MODE="0660", TAG
 # Generic SInput Device over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10c6", MODE="0660", TAG+="uaccess"
 
+# Generic SInput Device over USB full access (for web configurator)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10c6", MODE="0660", TAG+="uaccess"
+
 # Generic SInput Device over bluetooth hidraw
 KERNEL=="hidraw*", KERNELS=="*2E8A:10C6*", MODE="0660", TAG+="uaccess"
 
 # ProGCC in SInput Mode over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10df", MODE="0660", TAG+="uaccess"
 
+# ProGCC in SInput Mode over USB full access (for web configurator)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10df", MODE="0660", TAG+="uaccess"
+
 # ProGCC in SInput Mode over bluetooth hidraw
 KERNEL=="hidraw*", KERNELS=="*2E8A:10DF*", MODE="0660", TAG+="uaccess"
 
 # GC Ultimate in SInput Mode over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10dd", MODE="0660", TAG+="uaccess"
+
+# GC Ultimate in SInput Mode over USB full access (for web configurator)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10dd", MODE="0660", TAG+="uaccess"
 
 # GC Ultimate in SInput Mode over bluetooth hidraw
 KERNEL=="hidraw*", KERNELS=="*2E8A:10DD*", MODE="0660", TAG+="uaccess"
