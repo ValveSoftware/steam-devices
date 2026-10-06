@@ -199,6 +199,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0f0d", ATTRS{idProduct}=="012b", MODE="0660
 # Xbox One Elite 2 Controller
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", KERNELS=="*045E:0B22*", MODE="0660", TAG+="uaccess"
 
+# Xbox Wireless Controller over Bluetooth
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", KERNELS=="*045E:02E0*", MODE="0660", TAG+="uaccess"
+
 # Generic SInput Device over USB hidraw
 KERNEL=="hidraw*", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="10c6", MODE="0660", TAG+="uaccess"
 
