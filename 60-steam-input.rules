@@ -88,6 +88,14 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="0188", MODE="0660
 # Nacon PS4 Revolution Pro Controller
 KERNEL=="hidraw*", ATTRS{idVendor}=="146b", ATTRS{idProduct}=="0d01", MODE="0660", TAG+="uaccess"
 
+# Nacon Revolution 5 Pro over USB
+KERNEL=="hidraw*", ATTRS{idVendor}=="3285", ATTRS{idProduct}=="0d17", MODE="0660", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="3285", ATTRS{idProduct}=="0d19", MODE="0660", TAG+="uaccess"
+
+# Nacon Revolution 5 Pro over Bluetooth
+KERNEL=="hidraw*", KERNELS=="*3285:0D17*", MODE="0660", TAG+="uaccess"
+KERNEL=="hidraw*", KERNELS=="*3285:0D19*", MODE="0660", TAG+="uaccess"
+
 # Razer Raiju PS4 Controller
 KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="1000", MODE="0660", TAG+="uaccess"
 
