@@ -246,3 +246,9 @@ SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="057e", ATTRS{idP
 
 # Nintendo Switch 2 GameCube Controller over USB
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="2073", MODE="0660", TAG+="uaccess"
+
+# Santroller controllers over USB hidraw
+KERNEL=="hidraw*", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="288[23]", MODE="0660", TAG+="uaccess"
+
+# Santroller controllers over bluetooth hidraw
+KERNEL=="hidraw*", KERNELS=="*1209:288[23]*", MODE="0660", TAG+="uaccess"
