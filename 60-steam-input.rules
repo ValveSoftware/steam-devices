@@ -169,6 +169,12 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0955", ATTRS{idProduct}=="7210", MODE="0660
 # NVIDIA Shield Controller (2017 - NVIDIA_Controller_v01.04 over bluetooth hidraw)
 KERNEL=="hidraw*", KERNELS=="*0955:7214*", MODE="0660", TAG+="uaccess"
 
+# Amazon Luna Controller (Bluetooth)
+KERNEL=="hidraw*", KERNELS=="*0171:0419*", MODE="0660", TAG+="uaccess"
+
+# Amazon Luna Controller (USB)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0171", ATTRS{idProduct}=="0419", MODE="0660", TAG+="uaccess"
+
 # Astro C40
 KERNEL=="hidraw*", ATTRS{idVendor}=="9886", ATTRS{idProduct}=="0025", MODE="0660", TAG+="uaccess"
 
