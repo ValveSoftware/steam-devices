@@ -187,6 +187,9 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="044f", ATTRS{idProduct}=="b687", MODE="0660
 # Thrustmaster T.16000M Joystick
 KERNEL=="hidraw*", ATTRS{idVendor}=="044f", ATTRS{idProduct}=="b10a", MODE="0660", TAG+="uaccess"
 
+# Honeycomb Aeronautical Bravo Throttle Quadrant
+KERNEL=="hidraw*", ATTRS{idVendor}=="294b", ATTRS{idProduct}=="1901", MODE="0660", TAG+="uaccess"
+
 # Performance Designed Products Victrix Pro FS-12 for PS4 & PS5
 KERNEL=="hidraw*", ATTRS{idVendor}=="0e6f", ATTRS{idProduct}=="020c", MODE="0660", TAG+="uaccess"
 
